@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f4f4;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* Task 1 Style */
+.task1-button {
+  width: 200px;
+  background-color: rgb(102, 102, 168);
+  border-radius: 15px 15px 15px 15px;
+}
+.task1-button ul {
+  padding: 1em 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.task1-button ul li a {
+  padding: 0.6em 1em;
+  font-weight: bold;
+  color: #fff;
+  list-style: none;
+  text-decoration: none;
+}
+/* Task 2 Style */
+.task2-container {
+  background-color: gainsboro;
+  width: 100px;
+  padding: 1em 2em;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-left: 1em;
+}
+.task2-group {
+  color: darkgray;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  gap: 10px;
+}
+/* Task 3 Style */
+.task3-twitter-component {
+  margin-left: 1em;
+  background-color: #fff;
+  padding: 2em 1em;
+  width: 400px;
+}
+/* icon */
+.task3-icon {
+  color: blue;
+  font-size: 1.2em;
+  margin-bottom: 0.6em;
+}
+/* text */
+.task3-twitter-component h2 {
+  margin-top: 0;
+}
+.task3-primary-button,
+.task3-secondary-button {
+  border-radius: 15px 15px 15px 15px;
+  font-weight: bold;
+  padding: 0.6em 6em;
+}
+/* buttons */
+.task3-primary-button {
+  border: none;
+  background-color: blue;
+  color: white;
+  margin-bottom: 1em;
+}
+.task3-secondary-button {
+  border: 1px solid blue;
+  background-color: white;
+  color: blue;
+}
+/* Task 4 */
+
+/* Task 5 */
+.task5-div {
+  padding-bottom: 1em;
+}
+.task5-div p,
+.task5-div button {
+  margin-left: 1em;
+}
+.task6-div .counter {
+  color: green;
+  background-color: #fff;
+  padding: 1em 2em;
+}
