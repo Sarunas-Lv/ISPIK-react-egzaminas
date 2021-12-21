@@ -1,13 +1,47 @@
-import React, { useState, useEffect, useRef } from 'react';
+import axios from 'axios';
+import React, { useState, useEffect } from 'react';
 
-let loading = useRef(true)
 const TableComponent = () => {
-  return <table>
-      <thead></thead>
+  const [loaded, setloaded] = useState(false);
+  const [allUsers, setallUsers] = useState([]);
+  useEffect(() => {
+    axios.get('https://jsonplaceholder.typicode.com/users').then((res) => {
+      console.log(res.data);
+      setallUsers(res.data);
+      setloaded(true);
+    });
+  }, []);
+  const userAdress = allUsers.map((user) => user.address);
+  if (userAdress) {
+    console.log('userAdress: ', userAdress);
+  }
+  return (
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Adress</th>
+          <th>Phone</th>
+          <th>Company</th>
+        </tr>
+      </thead>
       <tbody>
-        {loading&&(<tr><td></td><td></td><td></td></tr>)}
+        {loaded &&
+          allUsers.map((user) => (
+            <tr key={user.id}>
+              <td>{user.name}</td>
+              <td>{user.email}</td>
+              <td>
+                {user.address.street}, {user.address.city}
+              </td>
+              <td>{user.phone}</td>
+              <td>{user.company.name}</td>
+            </tr>
+          ))}
       </tbody>
-  </table>;
+    </table>
+  );
 };
 
 export default TableComponent;

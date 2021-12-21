@@ -85,7 +85,14 @@ code {
   color: blue;
 }
 /* Task 4 */
-
+.task4-div table,
+.task4-div table tbody tr td {
+  border: 1px solid black;
+  background-color: white;
+}
+.task4-div table thead tr th {
+  border: 2px solid black;
+}
 /* Task 5 */
 .task5-div {
   padding-bottom: 1em;
