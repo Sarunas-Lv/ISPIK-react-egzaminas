@@ -1,8 +1,28 @@
-# Getting Started with Create React App
+## Table of contents
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- [General info](#general-info)
+- [Technologies](#technologies)
+- [Setup](#setup)
+- [Routes](#routes)
 
-## Available Scripts
+## General info
+
+This is first part of CodeAcademy ISPK exam. To view the questions for each task navigate to task component and read the comments at the bottom.
+## Technologies
+
+Project is created using:
+
+- "@testing-library/jest-dom" version: "^5.14.1",
+- "@testing-library/react" version: "^11.2.7",
+- "@testing-library/user-event" version: "^12.8.3",
+- "axios" version: "^0.21.4",
+- "react" version: "^17.0.2",
+- "react-dom" version: "^17.0.2",
+- "react-scripts" version: "4.0.3",
+- "web-vitals" version: "^1.1.2"
+
+## Setup
+
 
 In the project directory, you can run:
 
