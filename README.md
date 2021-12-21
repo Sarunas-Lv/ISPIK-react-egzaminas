@@ -23,9 +23,8 @@ Project is created using:
 
 ## Setup
 
-
-In the project directory, you can run:
-
+1. Got to directory folder, open integrated terminal run 'npm i'
+2. In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.\
